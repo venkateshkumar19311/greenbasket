@@ -4,40 +4,127 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="theme-color" content="#10b981" />
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="GreenBasket - Fresh Organic Groceries Delivered to Your Doorstep" />
+    <meta name="description" content="Shop fresh organic groceries, vegetables, fruits, dairy products, and daily essentials online at GreenBasket. Free home delivery over ₹499. Order now for same-day delivery!" />
+    <meta name="keywords" content="organic groceries online, fresh vegetables delivery, online grocery shopping, dairy products online, fruits home delivery, GreenBasket, grocery delivery India, same day grocery delivery, fresh produce online" />
+    <meta name="author" content="GreenBasket" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+    
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://www.greenbasket.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.greenbasket.com/" />
+    <meta property="og:site_name" content="GreenBasket" />
+    <meta property="og:title" content="GreenBasket - Fresh Organic Groceries Online" />
+    <meta property="og:description" content="Order fresh organic groceries, vegetables, fruits & dairy products online. Free delivery over ₹499. Same-day delivery available!" />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_IN" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.greenbasket.com/" />
+    <meta name="twitter:title" content="GreenBasket - Fresh Organic Groceries Online" />
+    <meta name="twitter:description" content="Order fresh organic groceries, vegetables, fruits & dairy products online. Free delivery over ₹499!" />
+    <meta name="twitter:image" content="%PUBLIC_URL%/twitter-card.jpg" />
+    <meta name="twitter:creator" content="@GreenBasket" />
+    
+    <!-- Additional SEO Meta -->
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="India" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- PWA Meta Tags -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "GreenBasket",
+      "url": "https://www.greenbasket.com/",
+      "description": "Fresh organic groceries delivered to your doorstep",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.greenbasket.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "GreenBasket",
+      "url": "https://www.greenbasket.com/",
+      "logo": "https://www.greenbasket.com/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-55551-234-567",
+        "contactType": "Customer Service",
+        "areaServed": "IN",
+        "availableLanguage": ["English", "Hindi"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/greenbasket",
+        "https://www.instagram.com/greenbasket",
+        "https://twitter.com/greenbasket"
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "GreenBasket",
+      "image": "https://www.greenbasket.com/logo.png",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "GreenBasket HQ, Main Street",
+        "addressLocality": "Chennai",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "600001",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-55551-234-567",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "07:00",
+        "closes": "21:00"
+      }
+    }
+    </script>
+    
+    <title>GreenBasket - Fresh Organic Groceries & Vegetables Online Delivery</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>You need to enable JavaScript to run this app. GreenBasket offers fresh organic groceries online with free home delivery.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

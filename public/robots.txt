@@ -1,3 +1,71 @@
 # https://www.robotstxt.org/robotstxt.html
+# GreenBasket - Robots.txt Configuration
+
+# Allow all search engines
 User-agent: *
-Disallow:
+Allow: /
+Allow: /shop
+Allow: /categories
+Allow: /blog
+Allow: /products
+Allow: /about
+Allow: /contact
+Allow: /orders
+Allow: /account
+Allow: /faq
+
+# Disallow private/admin areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*?*utm_source=*
+Disallow: /checkout/
+Disallow: /payment/
+
+# Sitemaps
+Sitemap: https://www.greenbasket.com/sitemap.xml
+
+# Crawl-delay for specific bots
+User-agent: Googlebot
+Crawl-delay: 0
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /img/
+Allow: /static/
+
+User-agent: Bingbot
+Crawl-delay: 1
+Allow: /
+
+# Block bad bots (with crawl delay)
+User-agent: AhrefsBot
+Crawl-delay: 10
+Disallow: /
+
+User-agent: SemrushBot
+Crawl-delay: 10
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Allow helpful bots
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
